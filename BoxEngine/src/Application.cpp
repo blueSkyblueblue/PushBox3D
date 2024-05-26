@@ -28,7 +28,7 @@ Application::Application()
 	m_Window = Window::create(spec);
 	m_Window->loadEventHandler(BIND_FUNCTION(Application::onEvent));
 	m_Window->makeContextCurrent();
-	if (!Renderer::initialize()) __debugbreak();
+	if (!RendererCommand::initialize()) __debugbreak();
 }
 
 Application::~Application()

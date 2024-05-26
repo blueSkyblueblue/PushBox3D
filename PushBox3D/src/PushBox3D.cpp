@@ -81,7 +81,7 @@ public:
 
 		m_VAO.bind();
 		m_Shader.use();
-		Renderer::drawElements(3);
+		RendererCommand::drawElements(3);
 
 		auto [width, height] = Application::get()->getWindowSize();
 
@@ -107,7 +107,7 @@ public:
 		dispatcher.dispatch<WindowResizeEvent>(
 			[](WindowResizeEvent& e) -> bool
 			{
-				Renderer::setViewport(0, 0, e.Width, e.Height);
+				RendererCommand::setViewport(0, 0, e.Width, e.Height);
 				Renderer2D::resize(0.f, (float)e.Width, 0.f, (float)e.Height);
 				return false;
 			});
