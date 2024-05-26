@@ -5,7 +5,7 @@ class Camera
 {
 public:
 	Camera(const glm::mat4& projection) 
-		: m_Projection { projection }, m_View { glm::mat4(1.f) }
+		: m_Projection { projection }
 	{
 	}
 
@@ -15,5 +15,5 @@ public:
 	virtual void transform(const glm::mat4& transform) = 0;
 protected:
 	glm::mat4 m_Projection;
-	glm::mat4 m_View;
+	glm::mat4 m_View = glm::mat4(1.f);
 };

@@ -1354,6 +1354,8 @@
     <ClInclude Include="src\Camera\Camera.h" />
     <ClInclude Include="src\Camera\PerspectiveCamera.h" />
     <ClInclude Include="src\Camera\OrthographicCamera.h" />
+    <ClInclude Include="src\Camera\OrthoCamera2D.h" />
+    <ClInclude Include="src\Camera\OrthoCamera2D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Application.cpp">
@@ -1399,5 +1401,6 @@
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
     <ClCompile Include="src\Camera\PerspectiveCamera.cpp" />
+    <ClCompile Include="src\Camera\OrthographicCamera.cpp" />
   </ItemGroup>
 </Project>
